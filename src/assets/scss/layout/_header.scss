@@ -28,6 +28,10 @@
 		width: 100%;
 		z-index: _misc(z-index-base);
 
+		.no-box {
+			box-shadow: none;
+		}
+
 		.logo {
 			border: 0;
 			display: inline-block;

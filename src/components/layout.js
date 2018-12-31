@@ -1,6 +1,6 @@
 import React from 'react'
 //import PropTypes from 'prop-types'
-import WebFont from 'webfontloader'
+
 import '../assets/scss/main.scss'
 import Header from './Header'
 import Menu from './Menu'
@@ -18,11 +18,6 @@ class Layout extends React.Component {
   }
 
   componentDidMount() {
-    WebFont.load({
-      google: {
-        families: ['Amatic+SC:400,700', 'Bilbo']
-      }
-    });
     this.timeoutId = setTimeout(() => {
       this.setState({ loading: '' })
     }, 100)

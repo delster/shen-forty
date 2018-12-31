@@ -7,12 +7,6 @@ import Menu from './Menu'
 import Contact from './Contact'
 import Footer from './Footer'
 
-WebFont.load({
-  google: {
-    families: ['Amatic+SC:400,700', 'Bilbo']
-  }
-});
-
 class Layout extends React.Component {
   constructor(props) {
     super(props)
@@ -24,6 +18,11 @@ class Layout extends React.Component {
   }
 
   componentDidMount() {
+    WebFont.load({
+      google: {
+        families: ['Amatic+SC:400,700', 'Bilbo']
+      }
+    });
     this.timeoutId = setTimeout(() => {
       this.setState({ loading: '' })
     }, 100)
